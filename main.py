@@ -1,13 +1,15 @@
 
+
 from create2oi import roomba
 import time
 
+# demonstration of the roomba open interface 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     r = roomba.Roomba(port="/dev/cu.usbserial-AC01OAX0")
     r.start(roomba.RoombaConstants.SAFE)
 
-    # only reset in case some problem
+    # only reset in case some problems occur
     # r.reset()
     # print(r.info)
     # r.start(roomba.RoombaConstants.SAFE)
